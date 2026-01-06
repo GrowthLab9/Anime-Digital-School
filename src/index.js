@@ -1,5 +1,6 @@
 import { TelegramBot } from './telegram.js';
 import { BotHandler } from './handlers.js';
+// ... sisanya
 
 export default {
   async fetch(request, env) {
