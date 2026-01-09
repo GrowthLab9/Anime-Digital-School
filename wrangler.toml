@@ -3,5 +3,5 @@ main = "src/index.js"
 compatibility_date = "2026-01-06"
 [vars]
 # Variabel kosong ini nanti diisi di Dashboard Cloudflare
-# BOT_TOKEN = ""
+# TELEGRAM_BOT_TOKEN = ""
 # ADMIN_ID = ""
