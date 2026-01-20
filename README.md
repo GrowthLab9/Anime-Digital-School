@@ -14,7 +14,7 @@
 ### 🛒 Digital Marketplace
 * **Interactive Catalog**: Menu produk interaktif dengan detail harga dan deskripsi.
 * **Streamlined Payment**: Alur instruksi pembayaran yang jelas untuk pembeli.
-* **Modular Config**: Tambah/edit produk hanya melalui satu file konfigurasi (`src/config.js`).
+* **Modular Config**: Tambah/edit produk hanya melalui satu file konfigurasi.
 
 ### 🛡️ Smart Moderation (Community)
 * **Anti-Link System**: Menghapus tautan eksternal secara otomatis untuk mencegah spam.
@@ -31,9 +31,14 @@
 
 ```text
 ├── src/
-│   ├── config.js         # Pengaturan Produk, Harga, & Kata Kasar
-│   ├── telegram.js       # Helper API Telegram (Otot)
-│   ├── handlers.js       # Logika Bisnis & Fitur (Otak)
 │   └── index.js          # Main Entry Point
 ├── wrangler.toml         # Konfigurasi Cloudflare
 └── LICENSE               # Lisensi MIT
+```
+
+## 🔐 Konfigurasi Environment
+
+Set variabel berikut di Cloudflare Workers (atau `wrangler.toml`) sebelum menjalankan:
+
+- `BOT_TOKEN` — token bot dari BotFather.
+- `ADMIN_ID` — ID Telegram admin (opsional, untuk akses broadcast).
